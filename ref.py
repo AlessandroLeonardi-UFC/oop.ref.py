@@ -31,12 +31,12 @@ MinhaClasseMae.__init__()
 
 # Decoradores para getter:
 @property
-def myAttributeName(self):
+def meuAtributo(self):
     pass
 
 # Decoradores para setter:
-@myAttributeName.setter
-def myAttributeName(self):
+@meuAtributo.setter
+def meuAtributo(self):
     pass
 
 # Atributo de classe:
