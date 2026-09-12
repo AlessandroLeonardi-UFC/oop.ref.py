@@ -1,3 +1,6 @@
+#### Guia de Referência Rápida para a AP01 - POO ####
+
+
 # Definição de uma classe:
 class MinhaClasseFilha(MinhaClassePai, MinhaClasseMae):
     pass
@@ -31,6 +34,19 @@ def meuAtributo(self):
 def meuAtributo(self):
     pass
 
+
+
+
+
+
+
+
+
+
+
+
+
+## Página 01
 # Double Underscore Methods (Dundle) para sobrecarga de operadores:
 def __str__(self):
     # print(f"{self}")
@@ -80,6 +96,8 @@ def __invert__(self):
     # ~p1
     pass
 
+
+# Página 02
 def __lt__(self, other):
     # p1 < p2
     pass
@@ -95,8 +113,6 @@ def __le__(self, other):
 def __ge__(self, other):
     # p1 >= p2
     pass
-
-
 
 def __eq__(self, other):
     # p1 == p2
@@ -126,6 +142,13 @@ def __xor__(self, other):
     # p1 ^ p2
     pass
 
+
+
+
+
+
+
+# Página 03
 # Checagem de tipo e hierarquia
 isinstance(minhaInstancia, MinhaClasse)
 issubclass(ClasseFilha, ClassePai)
@@ -149,3 +172,30 @@ FileNotFoundError
 IndexError
 KeyError
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Página 04
