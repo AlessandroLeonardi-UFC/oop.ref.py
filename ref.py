@@ -143,6 +143,7 @@ raise Error
 TypeError
 ValueError
 NameError
+RuntimeError
 ZeroDivisionError
 FileNotFoundError
 IndexError
