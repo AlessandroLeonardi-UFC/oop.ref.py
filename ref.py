@@ -1,6 +1,3 @@
-# Abstract Base Class import (necessária para a implementação de interfaces)
-from abc import ABC
-
 # Definição de uma classe:
 class MinhaClasseFilha(MinhaClassePai, MinhaClasseMae):
     pass
@@ -23,12 +20,7 @@ def __init__(self):
 def __del__(self):
     # del(self)
     pass
-
-# uso de super:
-super().__init__()
-MinhaClassePai.__init__()
-MinhaClasseMae.__init__()
-
+    
 # Decoradores para getter:
 @property
 def meuAtributo(self):
@@ -37,14 +29,6 @@ def meuAtributo(self):
 # Decoradores para setter:
 @meuAtributo.setter
 def meuAtributo(self):
-    pass
-
-# Atributo de classe:
-meuAtributoCompartilhado = 0
-
-# Método de Classe:
-@classmethod
-def meuMetodoObrigatorio (cls):
     pass
 
 # Double Underscore Methods (Dundle) para sobrecarga de operadores:
@@ -96,8 +80,6 @@ def __invert__(self):
     # ~p1
     pass
 
-
-
 def __lt__(self, other):
     # p1 < p2
     pass
@@ -113,6 +95,8 @@ def __le__(self, other):
 def __ge__(self, other):
     # p1 >= p2
     pass
+
+
 
 def __eq__(self, other):
     # p1 == p2
@@ -141,13 +125,6 @@ def __or__(self, other):
 def __xor__(self, other):
     # p1 ^ p2
     pass
-
-
-
-
-
-
-
 
 # Checagem de tipo e hierarquia
 isinstance(minhaInstancia, MinhaClasse)
