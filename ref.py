@@ -2,7 +2,7 @@
 
 
 # Definição de uma classe:
-class MinhaClasseFilha(MinhaClassePai, MinhaClasseMae):
+class MinhaClasse:
     pass
 
 # Encapsulamento de Atributos Protegidos (1 subtraço)
@@ -10,10 +10,6 @@ self._meuAtributoProtegido = 0
 
 # Encapsulamento de Atributos Privados (2 subtraços)
 self.__meuAtributoPrivado = 0
-
-# Instanciamento manual (executado ANTES de __init__)
-def __new__(cls, *args, **kwargs):
-    pass
 
 # Construtor com Valores Padrão:
 def __init__(self):
@@ -33,6 +29,11 @@ def meuAtributo(self):
 @meuAtributo.setter
 def meuAtributo(self):
     pass
+
+
+
+
+
 
 
 
@@ -96,7 +97,6 @@ def __invert__(self):
     # ~p1
     pass
 
-
 # Página 02
 def __lt__(self, other):
     # p1 < p2
@@ -147,11 +147,9 @@ def __xor__(self, other):
 
 
 
-
 # Página 03
-# Checagem de tipo e hierarquia
-isinstance(minhaInstancia, MinhaClasse)
-issubclass(ClasseFilha, ClassePai)
+# Checagem de tipo
+isinstance(valorQueroVerificar, TipoQueDeveSer )
 
 # Tratamento de erros:
 try:
@@ -160,7 +158,7 @@ except Exception as e:
     pass
 
 # disparar exceção
-raise Error
+raise Error("Mensagem")
 
 # Principais exceções:
 TypeError
@@ -171,6 +169,7 @@ ZeroDivisionError
 FileNotFoundError
 IndexError
 KeyError
+
 
 
 
